@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
     border-color: transparent;
     .navbar-brand {
         color: $theme-primary;
-        @include script-font;
+        //@include script-font;
         &:hover,
         &:focus,
         &:active,
@@ -179,6 +179,7 @@ header {
         padding-bottom: 50px;
         .intro-lead-in {
             @include serif-font;
+            //background-color: rgba(10, 4, 4, 0.2);
             font-style: italic;
             font-size: 22px;
             line-height: 22px;
@@ -186,6 +187,7 @@ header {
         }
         .intro-heading {
             @include heading-font;
+            background-color: rgba(10, 4, 4, 0.6);
             font-weight: 700;
             font-size: 50px;
             line-height: 50px;
@@ -235,6 +237,10 @@ section {
         font-weight: 400;
         margin-bottom: 75px;
     }
+}
+
+.contact-email {
+    color: orangered;
 }
 
 @media(min-width:768px) {
